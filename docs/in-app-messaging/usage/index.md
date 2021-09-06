@@ -40,6 +40,9 @@ so that they appear exactly when they'd benefit your users most.
 
 React Native Firebase provides support for both native Android & iOS integration with a simple JavaScript API.
 
+# Limitations
+Accorrding to [Gihthub isssue](https://github.com/firebase/firebase-ios-sdk/issues/4768) Firebase In-App Messaging allows only 1 campaign per day on app foreground or app launch - this is to prevent you from accidentally overwhelming your users with non-contextually appropriate messages. However, if you use the contextual triggers (ie: Analytics event or problematically triggered FIAM campaigns), there is no daily rate limit.
+
 # Usage
 
 Most of the set up occurs on [Firebase Console](https://console.firebase.google.com/u/0/project/_/inappmessaging) in the
